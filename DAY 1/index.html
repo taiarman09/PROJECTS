@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        .display-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .w-100{
+            width: 100%;
+            display: flex;
+        }
+        .w-50{
+            width: 50%;
+            height: 300px;
+        }
+        .display-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .display-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .display-4{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            gap: 10px;
+        }
+        .display-5{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .display-6{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 15px;
+            margin-left: 50px;
+        }
+        .font2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 320px;
+            font-family: cursive;
+        }
+        .font3{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin-top: 30px;
+        }
+        .font4{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .font5{
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 20px;
+            margin-bottom: 270px;
+        }
+        .font6{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+        }
+        .font7{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .font8{
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 20px;
+            margin-top: 250px;
+            margin-bottom: 50px;
+        }
+        .font9{
+            color: white;
+            padding-top: 500px;
+            padding-left: 350px;
+            font-size: 60px;
+        }
+        .font10{
+            color: white;
+            margin-top: 20px;
+            margin-left: 340px;
+            font-size: 20px;
+        }
+        .font11{
+            color: white;
+            margin-top: 300px;
+            margin-left: 380px;
+            font-size: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .font12{
+            font-size: 40px;
+            text-align: right;
+            margin-right: 180px;
+            margin-top: 70px;
+        }
+        .font13{
+            font-size: 40px;
+            margin-left: 150px;
+            margin-top: 70px;
+        }
+        .background{
+            background-color: black;
+            color: white;
+            height: 50px;
+        }
+        .background1{
+            height: 70px;
+        }
+        .background-image{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_FullTile01_dt.jpg);
+            max-height: 100%;
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .background-image-1{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_FullTile02_dt.jpg);
+            max-height: 100%;
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+         .background-image-2{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_Grid03_03_dt.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;           
+         }
+         .background-image-3{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_Grid03_02_dt.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;           
+         }
+         .background-image-4{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_Grid03_01_dt.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;           
+         }
+         .background-image-5{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/05_HP_FullTile04_dt.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;  
+            height: 1130px;
+            width: 100%;         
+         }
+        .card{
+            width: 620px;
+            height: 910px;
+            padding-top: 400px;
+        }
+        .card1{
+            height: 800px;
+            width: 460px;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            cursor: pointer;
+        }
+        .ul{
+            text-decoration: underline;
+        }
+        .ul:hover{
+            text-decoration: none;
+        }
+        .ul1:hover{
+            text-decoration: underline;
+        }
+        .ul2{
+            float: right;
+            margin-top: 20px;
+            font-size: 20px;
+            margin-right: 50px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .ul3{
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 50px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .ul4{
+            display: block;
+            margin-right: 50px;
+        }
+        .li10{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .image{
+            height: 30px;
+            max-width: 200px;
+        }
+        .gap-50{
+            gap: 50px;
+            font-size: 20px;
+        }
+        .text{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 22px;
+            line-height: 40px;
+        }
+        .text1{
+            font-size: 20px;
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        .text-center{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        .text-center2{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 25px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 50px;
+        }
+        .box1{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .box2{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .box3{
+            height: 200px;
+            width: 300px;
+            margin-left: 20px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+        }
+        button:hover{
+            text-decoration: underline;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .placeholder{
+            height: 50px;
+            padding-left: 20px;
+            width: 400px;
+        }
+    
+        
+
+
+
+        @media(max-width:1500px){
+            .font2{
+                padding-top: 300px;
+            }
+        }
+        @media(max-width:1200px){
+            .font2{
+                padding-top: 250px;
+            }
+        }
+        @media(max-width:1100px){
+            .font2{
+                padding-top: 200px;
+            }
+        }
+
+        @media(max-width:800px){
+            .font2{
+                padding-top: 150px;
+            }
+        }
+        @media(max-width:700px){
+            .font2{
+                padding-top: 100px;
+            }
+        }
+        @media(max-width:600px){
+            .font2{
+                padding-top: 80px;
+            }
+        }
+        @media(max-width:400px){
+            .font2{
+                padding-top: 50px;
+            }
+        }
+        @media(max-width:767px){
+            .font1{
+                text-align: center;
+                padding-top: 5px;
+            }
+        }
+        @media(max-width:991px){
+            .display-2{
+                display: flex;
+                justify-content: space-between;
+                margin: 0px 20px;
+            }
+        }
+        @media(max-width:767px){
+            .display-1{
+                display: block; 
+                text-align: center; 
+            }
+        }
+        @media(max-width:900px){
+            .font3{
+             font-size: 50px;
+             margin-top: 20px;
+            }
+        }
+        @media(max-width:700px){
+            .font3{
+             font-size: 40px;
+             margin-top: 10px;
+            }
+        }
+        @media(max-width:500px){
+            .font3{
+             font-size: 30px;
+             margin-top: 10px;
+            }
+        }
+        @media(max-width:991px){
+            .font4{
+                display: none;
+            }
+        }
+        @media(max-width:1570px){
+            .font5{
+                margin-bottom: 100px;
+            }
+        }
+        @media(max-width:1050px){
+            .font5{
+                margin-bottom: 70px;
+            }
+        }
+         @media(max-width:900px){
+            .font5{
+                margin-top: 10px;
+            }
+        }
+         @media(max-width:800px){
+            .font5{
+                font-size: 20px;
+            }
+        }
+        @media(max-width:700px){
+            .font5{
+                font-size: 18px;
+            }
+        }
+        @media(max-width:600px){
+            .font5{
+                font-size: 15px;
+                margin-bottom: 50px;
+            }
+        }
+        @media(max-width:370px){
+            .font5{
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+        }
+        @media(max-width:767px){
+            .ul{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        @media(max-width:630px){
+            .card{
+                height: 900px;
+                padding-top: 300px;
+            }
+        }
+        @media(max-width:620px){
+            .card{
+                height: 800px;
+                padding-top: 200px;
+            }
+            .font8{
+                margin-top: 200px;
+            }
+        }
+        @media(max-width:550px){
+            .card{
+                height: 700px;
+            }
+            .font8{
+                margin-top: 100px;
+            }
+        }
+        @media(max-width:475px){
+            .card{
+                height: 600px;
+            }
+            .font8{
+                margin-top: 50px;
+            }
+        }
+        @media(max-width:410px){
+            .card{
+                height: 500px;
+            }
+            .font8{
+                margin-top: 50px;
+            }
+        }
+        @media(max-width:300px){
+            .gap-50{
+               display: none;
+            }
+        }
+        @media(max-width:991px){
+            .ul1{
+                display: none;
+            }
+        }
+        @media(max-width:991px){
+            .li1{
+                display: none;
+            }
+        }
+        @media(min-width:991px){
+            .li2{
+                display: none;
+            }
+        }
+        @media(max-width:300px){
+            .image{
+                margin-left: 0px;
+            }
+        }
+        @media(min-width:1500px){
+            .background-image-5{
+                height: 960px;
+            }
+            .font11{
+                margin-top: 200px;
+            }
+        }
+        @media(max-width:1620px){
+            .background-image-5{
+                height: 960px;
+            }
+            .font9{
+                padding-top: 350px;
+                padding-left: 300px;
+            }
+            .font10{
+                margin-left: 300px;
+            }
+            .font11{
+                margin-top: 210px;
+                margin-left: 350px;  
+            }
+        }
+        @media(max-width:1450px){
+            .background-image-5{
+                height: 850px;
+            }
+            .font9{
+                padding-top: 300px;
+                padding-left: 250px;
+            }
+            .font10{
+                margin-left: 250px;
+            }
+            .font11{
+                margin-top: 170px;
+                margin-left: 300px;  
+            }
+        }
+        @media(max-width:1430px){
+            .background-image-5{
+                height: 700px;
+            }
+            .font9{
+                padding-top: 250px;
+                padding-left: 200px;
+            }
+            .font10{
+                margin-left: 200px;
+            }
+            .font11{
+                margin-top: 100px;
+                margin-left: 250px;  
+            }
+        }
+        @media(max-width:1180px){
+            .background-image-5{
+                height: 500px;
+            }
+            .font9{
+                padding-top: 200px;
+                padding-left: 150px;
+                font-size: 40px;
+            }
+            .font10{
+                margin-left: 150px;
+            }
+            .font11{
+                margin-top: 80px;
+                margin-left: 200px;  
+            }
+        }
+        @media(max-width:840px){
+            .background-image-5{
+                height: 300px;
+            }
+            .font9{
+                padding-top: 50px;
+                padding-left: 100px;
+                font-size: 40px;
+                color: black;
+            }
+            .font10{
+                margin-left: 100px;
+                font-size: 18px;
+                color: black;
+            }
+            .font11{
+                margin-top: 50px;
+                margin-left: 150px; 
+                color: black; 
+            }
+        }
+        @media(max-width:500px){
+            .background-image-5{
+                height: 200px;
+            }
+            .font9{
+                padding-top: 50px;
+                padding-left: 70px;
+                font-size: 20px;
+                color: black;
+            }
+            .font10{
+                margin-left: 70px;
+                font-size: 15px;
+                color: black;
+            }
+            .font11{
+                margin-top: 20px;
+                margin-left: 70px; 
+                color: black; 
+                font-size: 15px;
+            }
+        }
+        @media(max-width:800px){
+            .ul2{
+                text-align: left;
+                font-size: 20px;
+                flex-wrap: wrap;
+            }
+            .font12{
+                text-align: left;
+                margin-left: 20px;  
+            }
+            .ul3{
+                margin-left: 0px;
+                flex-wrap: wrap;
+            }
+            .font13{
+                margin-left: 30px;
+            }
+        }
+        @media(max-width:470px){
+            .card1{
+                height: 750px;
+            }
+        }
+        @media(max-width:430px){
+            .card1{
+                height: 700px;
+            }
+        }
+        @media(max-width:380px){
+            .card1{
+                height: 700px;
+            }
+        }
+        @media(max-width:380px){
+            .card1{
+                height: 620px;
+            }
+        }
+        @media(max-width:320px){
+            .card1{
+                height: 550px;
+            }
+        }
+        @media(max-width:500px){
+            .placeholder{
+                width: 250px;
+            }
+        }
+        @media(max-width:400px){
+            .placeholder{
+                width: 200px;
+            }
+            .box{
+                gap: 30px;
+            }
+        }
+        @media(max-width:330px){
+            .placeholder{
+                width: 150px;
+            }
+            .box{
+                gap: 20px;
+            }
+        }
+        @media(max-width:400px){
+            .ul2{
+                display: block;
+            }
+            .ul3{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="display-1 background">
+            <div class="font1">EXTRA 20% Off Select Styles</div>
+        <div class="font1">
+            <ul class="ul">
+                <li class="ul">Men</li>
+                <li class="ul">Women</li>
+                <li class="ul">Kids</li>
+                <li class="ul">Details</li>
+            </ul>
+        </div>
+    </header>
+
+    <header class="display-2 background1">
+        <div class="image"><img height="100%" width="100%" src="https://th.bing.com/th/id/OIP.fPmkEPefka8I8lAMJbQosAHaE1?w=288&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=""></div>
+        <div>
+            <ul>
+            <li class="ul1">New</li>
+            <li class="ul1">Men</li>
+            <li class="ul1">Women</li>
+            <li class="ul1">Kids</li>
+            <li class="ul1">Shoes & Accessories</li>
+            <li class="ul1">Tommy Jeans</li>
+            <li class="ul1">Sale</li>
+        </ul>
+    </div>
+        <div class="gap-50">
+           <ul>
+             <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li class="li1"><i class="fa-solid fa-bag-shopping"></i></li>
+            <li class="li2"><i class="fa-solid fa-bars"></i></li>
+           </ul>
+        </div>
+    </header>
+
+    <section class="background-image">
+        <div class="font2">New Arrivals</div>
+        <div class="font3">Prep's Cool</div>
+        <div class="font4">Vintage varsity vibes meet modern sportswear <br> in our latest collection for fall.</div>
+        <div class="display-3">
+            <div class="font5">Men's New Arrivals</div>
+            <div class="font5">Women's New Arrivals</div>
+        </div>
+    </section>
+
+    <section class="background-image-1">
+        <div class="font2"></div>
+        <div class="font3">Our New Blues</div>
+        <div class="font4">Iconically American. Equal parts classic and cool.<br>Up for anything.</div>
+        <div class="display-3">
+            <div class="font5">Shop Men's Jeans</div>
+            <div class="font5">Shop Women's Jeans </div>
+        </div>
+    </section>
+
+    <nav class="display-4">
+        <div class="card background-image-2">
+             <div class="font6">The Oxford Update</div>
+             <div class="font7">Buttoned-up styles with dressed-down <br> appeal,in cutting-edge fabrics and updated <br>hues.</div>
+             <div class="display-3">
+            <div class="font8">Shop Men</div>
+            <div class="font8">Shop Women</div>
+        </div>
+
+        </div>
+           <div class="card background-image-3">
+              <div class="font6">Pants, Perfected</div>
+             <div class="font7">Start every outfit in style with pants tailored<br>for work to weekend wear.</div>
+             <div class="display-3">
+            <div class="font8">Shop Men</div>
+            <div class="font8">Shop Women</div>
+           </div>
+           </div>
+           <div class="card background-image-4">
+                <div class="font6">The Polo Playbook</div>
+             <div class="font7">Design in every details.<br>Heaitage in every stitch.</div>
+             <div class="display-3">
+            <div class="font8">Shop Men</div>
+            <div class="font8">Shop Women</div>
+           </div>
+              </div>
+    </nav>
+
+
+    <section class="background-image-5">
+
+        <div class="font9">Top Marks</div>
+        <div class="font10">Show off their team Tommy spirit in bold <br>logo pieces that earn an A+ in style.</div>
+        <div class="font11">The Back To School Shop</div>
+    </section>
+
+    <section class="w-100">
+        <div class="w-50">
+            <div class="font12">Men </div>
+            <div>
+                <ul class="ul2">
+                    <li>Tops</li>
+                    <li>Outerwear</li>
+                    <li>Accessories</li>
+                    <li">Shoes</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="w-50">
+            <div class="font13">Women </div>
+            <div>
+                <ul class="ul3">
+                    <li>Tops</li>
+                    <li>Dress</li>
+                    <li>Accessories</li>
+                    <li">Shoes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="display-5">
+        <div class="card1">
+            <div><img height="100%" width="100%" src="https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_ExpMore01.jpg" alt=""></div>
+            <div class="text-center">Men's Underwear</div>
+            <div class="text-center2">Shop Now</div>
+        </div>
+
+        <div class="card1">
+            <div><img height="100%" width="100%" src="https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_ExpMore02.jpg" alt=""></div>
+            <div class="text-center">Tommy Jeans</div>
+            <div class="text-center2">Shop Now</div>
+        </div>
+        <div class="card1">
+            <div><img height="100%" width="100%" src="https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_ExpMore03.jpg" alt=""></div>
+            <div class="text-center">The Logo Shop</div>
+            <div class="text-center2">Shop Now</div>
+        </div>
+        <div class="card1">
+            <div><img height="100%" width="100%" src="https://media.tommy.com/us/static/images/scheduled_marketing/2025/04/22_HP_ExpMore04.jpg" alt=""></div>
+            <div class="text-center">Tommy Stories</div>
+            <div class="text-center2">Shop Now</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text">
+            <b>Enter your email for 20% off</b> <br>
+            your next order and more VIP perks <br>
+            Or text JOIN to TOMMY (86669) to sign up instantly
+        </div>
+
+        <div class="box">
+            <div><input class="placeholder"  type="text" placeholder="Your email"></div>
+            <div><button>Join Now </button></div>
+        </div>
+
+
+
+          <div class="box1">
+            By clicking the Join Now button, I agree to the Terms and Conditions and to receive updates on <br> the latest products and promotions via email or other channels. See Privacy Policy, which <br> includes our Notice of Financial Incentive, for more information.
+          </div>
+    </section>
+
+    <hr>
+
+
+    <footer class="box2">
+        <div>
+            <div class="text1"><b>Help & Support</b></div>
+            <ul class="ul4">
+                <li class="li10">Customer Service</li>
+                <li class="li10">Order Status</li>
+                <li class="li10">Shipping</li>
+                <li class="li10">Returns</li>
+                <li class="li10">Klarna</li>
+                <li class="li10">Cash App Afterpay</li>
+                <li class="li10">Promotions & Discounts</li>
+                <li class="li10">Group Discounts</li>
+                <li class="li10">E-Gift Cards</li>
+                <li class="li10">Store Directory</li>
+            </ul>
+        </div>
+        <div>
+            <div class="text1"><b>About Tommy Hilfiger</b></div>
+            <ul class="ul4">
+                <li class="li10">Tommy Stories</li>
+                <li class="li10">People's Place Program</li>
+                <li class="li10">Sustainability</li>
+                <li class="li10">Press</li>
+                <li class="li10">Tommy Trade In</li>
+            </ul>
+        </div>
+         <div>
+            <div class="text1"><b>Join Us</b></div>
+            <ul class="ul4">
+                <li class="li10">The Hilfiger Club</li>
+                <li class="li10">Newsletter Signup</li>
+                <li class="li10">Careers</li>
+                <li class="li10">Press</li>
+                <li class="li10">Affiliate Program</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="ul4">
+                <li class="li10">contact us</li>
+                <li class="li10">Store Locator</li>
+                <li class="li10">Chat</li>
+                <li class="li10">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+       
+
+    <footer>
+        <div class="box3"><img height="100%" width="100%" src="https://thfvnext.bing.com/th/id/OIP.RyrWk8vU7Gl7qskMMKhuxgHaE8?w=265&h=180&c=7&r=0&o=5&cb=thfvnext&dpr=1.3&pid=1.7" alt=""></div>
+        <div class="display-6">
+            <div>Terms & Conditions</div>
+            <div>|</div>
+            <div>Privacy Policy</div>
+            <div>|</div>
+            <div>Privacy Commitment</div>
+            <div>|</div>
+            <div>Interest Based Ads</div>
+            <div>|</div>
+            <div>Do Not Sell or Share My Personal Information</div>
+            <div>|</div>
+            <div>PVH Corp. Joint Modern Slavery Act Statement</div>
+            <div>|</div>
+            <div>Brand Protection</div>
+            <div>|</div>
+            <div>Accessibility</div>
+        </div>
+        <div style="font-size: 15px; margin-top: 50px; margin-left: 50px;">Web ID: 563536358</div>
+        <div  style="font-size: 15px; margin-top: 10px; margin-left: 50px; margin-bottom: 50px;">© 2025 Tommy Hilfiger licensing, LLC. All rights reserved.</div>
+    </footer>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+        .underline:hover {
+            text-decoration: underline;
+        }
+.header-fixed{
+      position: fixed;
+      background-color: white;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .margin100{
+      margin-top: 150px;
+    }
+        .image {
+            width: 200px;
+            height: 50px;
+        }
+
+        .width {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            background: linear-gradient(90deg, rgba(255, 61, 245, 1) 23%, rgba(220, 242, 234, 1) 100%);
+        }
+
+        .width:hover {
+            color: white;
+            background: linear-gradient(90deg, rgba(224, 29, 215, 1) 23%, rgba(224, 29, 215, 1) 100%);
+        }
+
+        .margin {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .margin1 {
+            margin-top: 10%;
+        }
+
+        .box3 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .box3-1 {
+            height: 250px;
+            width: 100%;
+        }
+
+        .box3-2 {
+            height: 150px;
+            width: 100%;
+        }
+
+        .border {
+            width: 100px;
+            height: 30px;
+            margin-top: 65%;
+            background-color: rgb(244, 237, 229);
+            border-radius: 0 10px 0 0;
+            text-align: center;
+        }
+        .background-box-image {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0375_1.jpg?v=1732804100&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0375_5.jpg?v=1732804100&width=533);
+        }
+        .background-box-image1{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0279_2.jpg?v=1716008417&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image1:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0279_5.jpg?v=1716008417&width=533);
+        }
+        .background-box-image2{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0121_2_277cbdc7-deca-4e41-9162-b81366f6e1a9.jpg?v=1742206818&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image2:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0121_5_7f471335-4c72-4c7e-be36-7eff01d7cded.jpg?v=1742206818&width=533);
+        }
+        .background-box-image3{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0384_2.jpg?v=1746005849&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image3:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0384_1.jpg?v=1746005849&width=533);
+        }
+        .background-box-image4{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0015_2.jpg?v=1719486740&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image4:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0015_5.jpg?v=1719486740&width=533);
+        }
+        .background-box-image5{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0052_2.jpg?v=1715261254&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image5:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0052_5.jpg?v=1715261254&width=533);
+        }
+        .background-box-image6{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0290_2.jpg?v=1721109301&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image6:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0290_5.jpg?v=1721109301&width=533);
+        }
+        .background-box-image7{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0412_2.jpg?v=1740660827&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image7:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0412_5.jpg?v=1740660827&width=533);
+        }
+        .background-box-image8{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0282_2.jpg?v=1714384673&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image8:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0282_5.jpg?v=1714384673&width=533);
+        }
+        .background-box-image9{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0256_2.jpg?v=1714975113&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image9:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0256_5.jpg?v=1714975113&width=533);
+        }
+        .background-box-image10{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0280_2.jpg?v=1715261430&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image10:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0280_5.jpg?v=1715261430&width=533);
+        }
+        .background-box-image11{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0145_2_4194f7a1-866f-44a6-ba43-e00c97a45278.jpg?v=1738304196&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image11:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0145_5_f2e45135-7d42-44cf-baa4-b47a0b7b5df5.jpg?v=1738304196&width=533);
+        }
+        .background-box-image12{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0215_2_34d08575-f321-419a-b376-02634fe46017.jpg?v=1756809009&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image12:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0215_5_3bd46486-3e97-4532-9078-8da669c0e705.jpg?v=1756809009&width=533);
+        }
+        .background-box-image13{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0277_2.jpg?v=1715596810&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image13:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0277_5.jpg?v=1715596810&width=533);
+        }
+        .background-box-image14{
+            background-image: url(https://www.giva.co/cdn/shop/files/preview_images/cb83e10cb8a249d5bd087e89dff65bcf.thumbnail.0000000000.jpg?v=1692695637&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image14:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0219_2_3b431c66-8455-4676-a11e-f8bb05cb174d.jpg?v=1748584060&width=533);
+        }
+        .background-box-image15{
+            background-image: url(https://www.giva.co/cdn/shop/products/A076_2.jpg?v=1739365907&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image15:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/A076_5.jpg?v=1739365907&width=533);
+        }
+        .background-box-image16{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0044_2.jpg?v=1715258887&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image16:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0044_5.jpg?v=1715258887&width=533);
+        }
+        .background-box-image17{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0150_2.jpg?v=1717071196&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image17:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/A0150_1-min.jpg?v=1717071196&width=533);
+        }
+        .background-box-image18{
+            background-image: url(https://www.giva.co/cdn/shop/products/A0123_2-min.jpg?v=1724233467&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image18:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/A0123_5-min.jpg?v=1724233467&width=533);
+        }
+        .background-box-image19{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0374_2.jpg?v=1736149171&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image19:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0374_5_91d6ae29-643e-484f-abcd-c7a70a991020.jpg?v=1736149171&width=533);
+        }
+        .background-box-image20{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0312_2.jpg?v=1740660339&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image20:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0312_5.jpg?v=1740660339&width=533);
+        }
+        .background-box-image21{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0178_2.jpg?v=1716957921&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image21:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0178_5_207d884f-7e93-4735-8ef0-c9fdd013fe23.jpg?v=1716957921&width=533);
+        }
+        .background-box-image22{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0423_2_8b359d07-3db0-4147-bf9a-ce75607bb0bb.jpg?v=1740733551&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image22:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0423_5_d5b175e3-a9ad-4594-9902-e7c8804c21a9.jpg?v=1740733551&width=533);
+        }
+        .background-box-image23{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0216_2.jpg?v=1716484187&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image23:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0216_5.jpg?v=1716484187&width=533);
+        }
+        .background-box-image24{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0402_2.jpg?v=1737955447&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image24:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0402_5.jpg?v=1737955447&width=533);
+        }
+        .background-box-image25{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0419_2.jpg?v=1740660918&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image25:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0419_5.jpg?v=1740660918&width=533);
+        }
+        .background-box-image26{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0192_2.jpg?v=1721710451&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image26:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0192_5.jpg?v=1721710451&width=533);
+        }
+        .background-box-image27{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0376_2.jpg?v=1733402581&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image27:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0376_1.jpg?v=1733402581&width=533);
+        }
+        .background-box-image28{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0230_2.jpg?v=1714385164&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image28:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0230_5_946c97cc-bd6a-4ba5-a2e8-8fe2d9fcf725.jpg?v=1714385164&width=533);
+        }
+        .background-box-image29{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0170_2_60b6344d-046d-43c1-914d-90f9249024fb.jpg?v=1714385860&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image29:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0170_5.jpg?v=1714385860&width=533);
+        }
+        .background-box-image30{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0174_2.jpg?v=1715662525&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image30:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0174_5_3b13451a-2eba-415f-8d3a-c579883179ed.jpg?v=1715662525&width=533);
+        }
+        .background-box-image31{
+            background-image: url(https://www.giva.co/cdn/shop/files/A0317_2.jpg?v=1727959506&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image31:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/A0317_5.jpg?v=1727959506&width=533);
+        }
+        .background-box-image32{
+            background-image: url(https://www.giva.co/cdn/shop/products/A0026_2_2b752653-9b5a-4606-8440-9e99c166dbad.jpg?v=1720792981&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image32:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/A0026.jpg?v=1720792981&width=533);
+        }
+
+
+
+
+         @media(max-width:992px) {
+            .hidden {
+                display: none;
+            }
+        }
+
+        @media(min-width:993px) {
+            .navbar-123 {
+                display: none;
+            }
+        }
+
+        .list-style-none {
+            list-style: none;
+        }
+
+        .icone:hover {
+            transform: scale(1.3);
+        }
+
+        @media(max-width:500px) {
+            .hidden-menu-2 {
+                display: none;
+            }
+
+            .margin {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        @media(min-width:501px) {
+            .hidden-menu {
+                display: none;
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <section class="header-fixed">
+    <div class="d-flex justify-content-between pt-3 pb-3 ms-3 me-3">
+      <div>
+        <nav class="navbar navbar-expand-lg hidden">
+          <div class="container-fluid">
+            <a class="navbar-brand image" href="#"><img height="100%" width="100%"
+                src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt=""></a>
+          </div>
+        </nav>
+      </div>
+      <div class="d-flex gap-3  justify-content-center align-items-center">
+        <div class="hidden">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Where to Deliver? <br> Update
+            Delivery
+            Pincode</button>
+
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Enter Pincode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                  <label for="floatingInputGroup1">Enter Your Pincode</label>
+                </div>
+                <span class="input-group-text "><a href="index.html" class="underline-none">Update</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden">
+          <div class="form-floating  w-100-">
+            <input type="text" class="form-control" id="floatingPassword">
+            <label for="floatingPassword">Search For Product</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex  justify-content-center align-items-center gap-3">
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-store"></i></div>
+          <div>Stores</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-user"></i></div>
+          <div>Account</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-heart"></i></div>
+          <div>Wishlist</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div>Cart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-123">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand image " href="#"><img height="100%" width="100%"
+              src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div>
+                    <div class="form-floating  w-100-">
+                      <input type="text" class="form-control" id="floatingPassword">
+                      <label for="floatingPassword">Search For Product</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    <nav role="navigation" class="primary-navigation">
+      <div class="d-flex flex-wrap gap-2 margin justify-content-center">
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop by Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="all.html">All</a></li>
+            <li><a class="dropdown-item" href="ring.html">Rings</a></li>
+            <li><a class="dropdown-item" href="necklaces.html">Necklaces & Pendants</a></li>
+            <li><a class="dropdown-item" href="bracelets.html">Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
+            <li><a class="dropdown-item" href="anklets.html">Anklets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gold with Lab Diamonds
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Giva Gift Card
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gift Store
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="givagiftstore.html">GIVA Gift Store</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Occassion</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Theme</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Recipient</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Price</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men's Jewellery
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Rings</a></li>
+            <li><a class="dropdown-item" href="#">Pendants</a></li>
+            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="#">Chains</a></li>
+            <li><a class="dropdown-item" href="#">Sets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Latest Collections
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Gemstone Collection</a></li>
+            <li><a class="dropdown-item" href="#">Piercing Collection</a></li>
+            <li><a class="dropdown-item" href="#">DIVA Collection</a></li>
+            <li><a class="dropdown-item" href="#">Valentine's Collection</a></li>
+            <li><a class="dropdown-item" href="#">Sky High</a></li>
+            <li><a class="dropdown-item" href="#">Wings of Wonder</a></li>
+            <li><a class="dropdown-item" href="#">Cherry Pop Collection</a></li>
+            <li><a class="dropdown-item" href="#">Love in Paris</a></li>
+            <li><a class="dropdown-item" href="#">Convertible Collection</a></li>
+            <li><a class="dropdown-item" href="#">Just Arrived</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More at GIVA
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Media Mentions</a></li>
+            <li><a class="dropdown-item" href="#">Corporate Partnerships</a></li>
+            <li><a class="dropdown-item" href="#">Jewellery Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Blogs</a></li>
+            <li><a class="dropdown-item" href="#">Support & FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+
+  <section>
+    <select class="form-select hidden-menu form-select-sm" aria-label="Small select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </section>
+
+
+
+        <section class="margin100">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_8_-min_843a8bf6-37dd-463f-96f7-45357bee13ae.jpg?v=1757087899&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_8_-min_843a8bf6-37dd-463f-96f7-45357bee13ae.jpg?v=1757087899&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_8_-min_843a8bf6-37dd-463f-96f7-45357bee13ae.jpg?v=1757087899&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_8_-min_843a8bf6-37dd-463f-96f7-45357bee13ae.jpg?v=1757087899&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_8_-min_843a8bf6-37dd-463f-96f7-45357bee13ae.jpg?v=1757087899&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <hr>
+
+        <h3 class="ms-3">All (30+ Designs)</h3>
+
+         <section>
+            <div class="d-flex gap-3 flex-wrap justify-content-around ps-3 pe-3">
+
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 170
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Infinite Glow Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image1">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 101
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Forever Heart Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image2">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 121
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,599</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Infinity Zircon Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image3">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.6 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,699</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Twinkling Duo Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image4">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 253
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Zircon Bubble Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image5">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 339
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Dangling Triple Leaf Charm Ank...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                 <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image6">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 109
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,399</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Triple Flora Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image7">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 188
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Butterfly Dance Anklet </h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image8">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 287
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Blue Evil Eye Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image9">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 221
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,399</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Black Evil Eye Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image10">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 221
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Anushka Sharma Rose Gold Flower C...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image11">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 182
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Pearls & Flower Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image12">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 49
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Minimal Black Beads Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image13">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,699</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,399</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Classy Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image14">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 85
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Gypsy Gleams Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image15">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 35
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Sparkling Light Anklet </h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image16">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">5.0 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 2
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹6,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹9,799</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Classy Link Bracelet For Him</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image17">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 116
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Evil Eye Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image18">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 114
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Merging Stars Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image19">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 72
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,799</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Evil Eye Beaded Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image20">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 112
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold The Evil Eye Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image21">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 48
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Butterfly Charm Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image22">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 121
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Soul Spirit Black Bead Anklet </h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image23">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 143
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Zircon Charm Anklet </h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image24">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 87
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Layered Queen's Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image25">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 127
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹5,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Blue Butterfly Infinity Anklet </h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image26">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 30
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Bohemian Beaded Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image27">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 18
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,899</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Golden Captivating Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image28">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 40
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,899</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Classic Star Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image29">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.6 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,599</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Be A Butterfly Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image30">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 339
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,399</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Delicate Leaf Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image31">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">5.0 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 111
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,599</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Infinite Joy Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image32">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 7
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,799</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Curl Heart Anklet</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+         </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .background{
+        background: linear-gradient(90deg,rgba(8, 4, 130, 1) 100%, rgba(28, 25, 43, 1) 100%);
+        height: 30px;
+    }
+    .width{
+      min-width: 15%;
+      height: 80px;
+      margin-top: 20px;
+    }
+    .width1{
+      width: 300px;
+    }
+    .height{
+        height: 50px;
+        width: 150px;
+    }
+    .height2{
+      height: 50px;
+    }
+    .button{
+      width: 100px;
+      background-color: rgb(28, 6, 107);
+      color: white;
+    }
+    .button:hover{
+      background-color: rgba(0, 0, 0, 0);
+      color: black;
+    }
+    .card{
+      min-width: 22%;
+      max-height: 400px;
+      border: 0px solid black;
+      margin-bottom: 20px;
+    }
+    .card2{
+      width: 300px;
+      height: 500px;
+    }
+    .card3{
+      min-width: 22%;
+      max-height: 500px;
+      margin-bottom: 50px;
+    }
+    .font2{
+      display: flex;
+      justify-content: space-around;
+    }
+    .icone:hover{
+      transform: scale(1.1);
+    }
+    .d-flex-{
+      display: flex;
+      justify-content: space-around;
+    }
+    @media(max-width:660px){
+      .d-flex-{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media(max-width:1150px){
+      .li{
+        display: none;
+      }
+    }
+    @media(max-width:750px){
+      .font1{
+        font-size: 10px;
+      }
+    }
+    @media(max-width:750px){
+      .font2{
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media(max-width:750px){
+      .font3{
+        font-size: 10px;
+      }
+    }
+    @media(max-width:650px){
+      .card3{
+        min-width: 40%;
+        max-height: 400px;
+      }
+    }
+    @media(max-width:750px){
+      .text1{
+        display: none;
+      }
+      .text5{
+        display: none;
+      }
+    }
+    @media(max-width:660px){
+      .text2{
+        display: none;
+      }
+    }
+    @media(max-width:1149px){
+      .header2{
+        display: block;
+      }
+    }
+    @media(min-width:1150px){
+      .header2{
+        display: none;
+      }
+    }
+    @media(max-width:1420px){
+      .font2{
+        display: block;
+      }
+    }
+    
+    @media(max-width:600px){
+      .font{
+        font-size: 10px;
+      }
+    }
+    @media(max-width:355px){
+      .font{
+        display: none;
+      }
+      .background{
+        display: none;
+        height: 0;
+      }
+    }
+
+  </style>
+</head>
+  <body>
+    
+    <nav class="d-flex justify-content-center  background align-items-center">
+        <div class="text-light font">Get 5% OFF on Exclusive Collection only on Zouk Android App - Download Now</div>
+    </nav>
+
+
+    <div class="d-flex justify-content-between">
+      <nav class="navbar li navbar-expand-lg ">
+  <div class="container-fluid ">
+    <button class="navbar-toggler li" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav nav-underline">
+        <li class="nav-item d-flex dropdown">
+          <a class="nav-link underline text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Bags
+          </a>
+          <ul class="dropdown-menu">
+            <div class="d-flex">
+              <div>
+                  <li><a class="dropdown-item text-danger" href="#">Sling BOGO</a></li>
+            <hr>
+            <li><a class="dropdown-item text-danger" href="#">Wallet BOGO</a></li>
+            <hr>
+            <li><a class="dropdown-item text-danger" href="#">Proudly Indian Sale</a></li>
+            <li><a class="dropdown-item" href="#">Buy 2 Slings at ₹1399</a></li>
+            <li><a class="dropdown-item" href="#">Statement Office Bag - ₹1499</a></li>
+            <li><a class="dropdown-item" href="#">Office Tote - ₹1499</a></li>
+            <li><a class="dropdown-item" href="#">Kriti X Zouk Collection - Rakhi Sale</a></li>
+            <li><a class="dropdown-item" href="#">Satchel Bag - ₹1499</a></li>
+            <li><a class="dropdown-item" href="#">Tote Bag - ₹999</a></li>
+            <li><a class="dropdown-item" href="#">New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Special Combo's - Flat 15% OFF</a></li>
+            <li><a class="dropdown-item" href="#">Statement Business Bag - On Sale</a></li>
+            <li><a class="dropdown-item" href="#">Just Dropped: Getaway - ₹1749</a></li>
+            <li><a class="dropdown-item" href="#">Make your Own Gift Combo</a></li>
+              </div>
+              <div>
+                  <li><a class="dropdown-item text-danger" href="#">Office Bags</a></li>
+
+            <li><a class="dropdown-item" href="#">Women's Office Bag</a></li>
+            <li><a class="dropdown-item" href="#">Statement Office Bag</a></li>
+            <li><a class="dropdown-item" href="#">Office Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Conference Office Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Women's Work Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Statement Business Bag - New Arrival</a></li>
+            <li><a class="dropdown-item" href="#">Office Essential Bag - Selling Fast</a></li>
+            <li><a class="dropdown-item" href="#">Arin Laptop Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Classic Commute Office Bag - Just Launched</a></li>
+            <li><a class="dropdown-item" href="#">Premium Office Picks - On Sale</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Office Bag - Signature Work Bags</a></li>
+            <li><a class="dropdown-item" href="#">Laptop Bag</a></li>
+            <li><a class="dropdown-item" href="#">Laptop Sleeves</a></li>
+              </div>
+                <div>
+              <li><a class="dropdown-item text-danger" href="#">Sling Bags</a></li>
+
+            <li><a class="dropdown-item" href="#">Nadia Sling Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Kiya Baguette - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Flap Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Harmony Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Regular Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Shoulder Bag</a></li>
+            <li><a class="dropdown-item" href="#">U-Shaped Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">OOO Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Baguette</a></li>
+            <li><a class="dropdown-item" href="#">Beyond Basic Sling Bag - New Drop</a></li>
+            <li><a class="dropdown-item" href="#">Statement Sling Bag - Style Meets Utility</a></li>
+            <li><a class="dropdown-item" href="#">Aalya Baguette - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Zoe Sling Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Saisha Sling Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Ziya Sling Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Baguette- New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Sling Bag - New Launch</a></li>
+            </div>
+            <div>
+              <li><a class="dropdown-item text-danger" href="#">Satchel Bags</a></li>
+
+            <li><a class="dropdown-item" href="#">SAK Satchel</a></li>
+            <li><a class="dropdown-item" href="#">Konkona Heritage Satchel Bag - Price Drop</a></li>
+            <li><a class="dropdown-item" href="#">Konkona City Satchel Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Kriti Sanon - Nessa Satchel Bag</a></li>
+            <li><a class="dropdown-item" href="#">Kriti Sanon - Iconic Evening Satchel</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Satchel Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Konkona Statement Satchel Bag - New Launch</a></li>
+            <hr>
+            <li><a class="dropdown-item text-danger" href="#">Tote Bags</a></li>
+            <li><a class="dropdown-item" href="#">Everyday Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Daiper Bag</a></li>
+            <li><a class="dropdown-item" href="#">Classic Travel Tote - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Tote Bags</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Naisha Tote Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Tote Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Tote Bag - New Launch</a></li>
+            </div>
+     </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Backpacks
+          </a>
+          <ul class="dropdown-menu">
+            <div>
+            <li><a class="dropdown-item" href="#">Olina Daypack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Mayra Mini-Daypack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Dalila Mini-Daypack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Office Backpack</a></li>
+            <li><a class="dropdown-item" href="#">Statement Backpack</a></li>
+            <li><a class="dropdown-item" href="#">Classic Backpacks</a></li>
+            <li><a class="dropdown-item" href="#">Taaran Backpack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Amalia Daypack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Amalia Backpack (Large) - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Dome Daypack</a></li>
+            <li><a class="dropdown-item" href="#">Classic Daypack</a></li>
+            <li><a class="dropdown-item" href="#">Bags for Men</a></li>
+            </div>
+          </ul>
+
+
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Luggage
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Freya Fanny Pack - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Soft Luggage</a></li>
+            <li><a class="dropdown-item" href="#">Hard Luggage</a></li>
+            <li><a class="dropdown-item" href="#">Urban Escape Bag</a></li>
+            <li><a class="dropdown-item" href="#">Travel Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Weekender Duffle Bag</a></li>
+            <li><a class="dropdown-item" href="#">All Luggage</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Wallets
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Demi Mini Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Tovi Mini Bag - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Classic Zipper Wallet</a></li>
+            <li><a class="dropdown-item" href="#">Female Wallet</a></li>
+            <li><a class="dropdown-item" href="#">Kyra Flap Wallet</a></li>
+            <li><a class="dropdown-item" href="#">Arika Zipper Wallet</a></li>
+            <li><a class="dropdown-item" href="#">Female Clutches</a></li>
+            <li><a class="dropdown-item" href="#">Cosmetic Pouch</a></li>
+            <li><a class="dropdown-item" href="#">Eda Card Case</a></li>
+            <li><a class="dropdown-item" href="#">Wallets For Men - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Tarini Clutch - New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Clutch- New Launch</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rakhi Sale
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Statement Office Bag - ₹1499</a></li>
+            <li><a class="dropdown-item" href="#">Office Tote - ₹1499</a></li>
+            <li><a class="dropdown-item" href="#">Kriti X Zouk Collection - On Sale</a></li>
+            <li><a class="dropdown-item" href="#">Satchel Bag - ₹1699</a></li>
+            <li><a class="dropdown-item" href="#">Tote Bag - ₹999</a></li>
+            <li><a class="dropdown-item" href="#">New Launch</a></li>
+            <li><a class="dropdown-item" href="#">Special Combo's - Flat 15% OFF</a></li>
+            <li><a class="dropdown-item" href="#">Statement Business Bag - On Sale</a></li>
+            <li><a class="dropdown-item" href="#">Just Dropped: Getaway - ₹1599</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar li height navbar-expand-lg ">
+  <img height="100%" width="100%" src="./image/zouk-removebg-preview.png" alt="">
+</nav>
+
+<nav class="navbar  li navbar-expand-lg ">
+    
+    <div class="collapse  navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav  nav-underline">
+        <li class="nav-item header3 dropdown ">
+          <a  class="nav-link  text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Rhea Kapoor x Zouk
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Clutch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Baguette</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Tarini Clutch</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Office BagAnother action</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Ziya Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Adira Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Sling Bag</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Satchel Bag</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor Naisha Tote Bag</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item  dropdown">
+          <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Collections
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Gift Shop</a></li>
+            <li><a class="dropdown-item" href="#">Alt by Zouk</a></li>
+            <li><a class="dropdown-item" href="#">Zouk x Lenskart</a></li>
+            <li><a class="dropdown-item" href="#">Make your Own Combo</a></li>
+            <li><a class="dropdown-item" href="#">Rhea Kapoor x Zouk</a></li>
+            <li><a class="dropdown-item" href="#">Konkona Sensharma X Zouk</a></li>
+            <li><a class="dropdown-item" href="#">Footwear</a></li>
+            <li><a class="dropdown-item" href="#">Newly Launched</a></li>
+            <li><a class="dropdown-item" href="#">Special Combos</a></li>
+            <li><a class="dropdown-item" href="#">Bestsellers</a></li>
+            <li><a class="dropdown-item" href="#">Zouk’s Powerपोटली</a></li>
+            <li><a class="dropdown-item" href="#">Most Gifted</a></li>
+            <li><a class="dropdown-item" href="#">₹999 Gift Store</a></li>
+            <li><a class="dropdown-item" href="#">Bags For Men</a></li>
+          </ul>
+        </li>
+        <li class="nav-item  dropdown">
+          <a class="nav-link text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          About
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Invest in Her</a></li>
+            <li><a class="dropdown-item" href="#">Customer Reviews</a></li>
+            <li><a class="dropdown-item" href="#">Celeb Love</a></li>
+            <li><a class="dropdown-item" href="#">Why Zouk Bags?</a></li>
+            <li><a class="dropdown-item" href="#">Prints By Zouk - Bags</a></li>
+            <li><a class="dropdown-item" href="#">Why Zouk Footwear?</a></li>
+            <li><a class="dropdown-item" href="#">How to clean your Zouk Bag</a></li>
+            <li><a class="dropdown-item" href="#">Prints By Zouk - Footwear</a></li>
+            <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+            <li><a class="dropdown-item" href="#">Zouk Insider</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item  dropdown">
+          <div class="d-flex  pt-2 gap-3">
+            <div class="icone"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="icone"><i class="fa-solid fa-house-user"></i></div>
+            <div class="icone"><i class="fa-solid fa-user"></i></div>
+            <div class="icone"><i class="fa-solid fa-heart"></i></div>
+            <div class="icone"><i class="fa-solid fa-bag-shopping"></i></div>
+        </div>
+        </li>
+      </ul>
+    </div>
+</nav>
+    </div>
+    
+
+    <section class="d-flex ms-3 me-3 justify-content-between">
+      <nav class="navbar header2 navbar-expand-lg ">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+         <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Bags
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Backpacks
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Luggage
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Wallets
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Rakhi Sale
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="height2 header2"><img height="100%" width="100%" src="./image/zouk-removebg-preview.png" alt=""></nav>
+    </section>
+    
+
+    <section>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://zouk.co.in/cdn/shop/files/SLING_HP_D_3085172a-c4a8-4936-a07f-8b84790cd5e5.png?v=1754988502&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/WOB_HP_D.png?v=1754988502&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/Handbags_HP_D.png?v=1754996575&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/ET_HP_D.png?v=1754988874&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/BACKPACKS_HP_D_2.png?v=1754989047&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/RK_Hp_banner-01.png?v=1751439924&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/GenZ_Hp_D.png?v=1750855334&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/Maha_offer_f5c39d4c-cd43-4f79-8e11-bc00afc949e7.png?v=1753093676&width=2000" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://zouk.co.in/cdn/shop/files/Store_locator-03_95651875-fbb0-498f-afb3-eb6c87968d18.png?v=1752232832&width=2000" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <!--  -->
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <!--  -->
+  </button>
+</div>
+    </section>
+
+
+    <section>
+      <div id="carouselExampleRide" class="carousel mt-3 slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://zouk.co.in/cdn/shop/files/Alt_banner_6mb.gif?v=1750861169&width=1600" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <!--  -->
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <!--  -->
+  </button>
+</div>
+    </section>
+
+
+    <section>
+      <div class="d-flex overflow-scroll ms-3 me-3 overflow-y-hidden mt-3 justify-content-around gap-5">
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Nadia_1_8552db2f-36b5-40f1-9425-d045d54746e1.png?v=1751017323" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Demi_2_1ab59f28-1518-433f-9d5f-a18a8702293a.png?v=1751017341" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Kiya_3_ba13b86d-028c-4a17-a93a-f06955478fa5.png?v=1751017358" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Pixi_4_c127e4ea-356b-47be-9094-e12b1be19648.png?v=1751017385" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Harriet_5_693cb30f-f484-4a6d-9047-b828c72788f7.png?v=1751017407" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/olina_6_072bd268-3013-4dcf-bc1e-12549348947a.png?v=1751017431" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Ira_7_29d097a2-873d-47a4-aabe-d3d4bd60628c.png?v=1751017454" alt=""></div>
+      <div class="card"><img src="https://zouk.co.in/cdn/shop/files/Dalila_8_040881a4-16bf-41e8-9356-e52577cdf73b.png?v=1751017473" alt=""></div>
+    </div>
+   
+    </section>
+
+
+
+
+
+    <section>
+      <h2 class="d-flex justify-content-center pt-3 pb-3">Bestsellers</h2>
+      <div class="d-flex overflow-scroll  justify-content-around gap-3">
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/1x1_0010_Copy_of_Copy_of_Copy_of_Rhea_Kapoor_X_ZOUK_5th_March_2025_4524_copy.jpg?v=1746189579&width=300" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title text-center font1">Rhea Kapoor Sling Bag - With Love, Rhea</div>
+    <div class="font2 ">
+      <div class="card-text text-center">₹ 2,099.00</div>
+    <div class="text-center">MRP: Regular price₹ 2,599.00</div>
+    </div>
+  </div>
+</div>
+
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/FloMotif_Office_Tote_Bag_e6b02714-6036-4dd3-b2ee-e9b2e792a635.jpg?v=1744199148&width=600" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title font1 text-center">FloMotif Office Tote Bag</div>
+    <p class="card-text font3 text-center">₹ 1,529.00</p>
+  </div>
+</div>
+
+        
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/Women_s_Office_Bag_2_803bc625-416c-4423-9962-099665b70c76.jpg?v=1744917316&width=400" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title font1 text-center">Kolkata Nouveau Women's Office Bag</div>
+    <p class="card-text font3 text-center">₹ 1,499.00</p>
+  </div>
+</div>
+
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/LatticeLaceWomen_sOfficeBag.jpg?v=1745331355&width=400" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title font1 text-center">Lattice Lace Women's Office Bag</div>
+    <p class="card-text font3 text-center">₹ 1,499.00</p>
+  </div>
+</div>
+
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/FloMotif_Women_s_Office_Bag_56789b0e-b39c-4582-b642-724344700af5.jpg?v=1743607371&width=400" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title font1 text-center">FloMotif Women's Office Bag</div>
+    <p class="card-text font3 text-center">₹ 1,499.00</p>
+  </div>
+</div>
+
+
+
+        <div class="card3">
+  <img width="100%" height="100%" src="https://zouk.co.in/cdn/shop/files/harmonyslingbagStylised_7.jpg?v=1713860461&width=400" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="card-title font1 text-center">WavBeach Harmony Sling Bag</div>
+    <p class="card-text font3 text-center">₹ 1,399.00</p>
+    <div class="text-center font3">Buy Any 2 for ₹1399</div>
+  </div>
+</div>
+
+      </div>
+      
+    </section>
+
+
+    <section class="mt-5 text-center"><a href="VIEW OUR BESTSELLERS.html"><button type="button" class="btn btn-primary">VIEW OUR BESTSELLERS <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button></a></section>
+
+    <hr>
+
+
+    <section>
+      <div class="d-flex overflow-scroll ms-3 me-3 overflow-y-hidden">
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video1.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video2.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video3.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video4.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video5.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video6.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video7.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video8.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video9.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video10.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video11.mp4"></video></div>
+        <div class="card2"><video autoplay loop muted height="100%" src="./image/video12.mp4"></video></div>
+      </div>
+    </section>
+
+
+    <section>
+      <h2 class="d-flex justify-content-center pt-3 pb-3">Featured</h2>
+      <div class="d-flex flex-wrap justify-content-between ms-5 me-5">
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Forbes.png?v=1721728166&width=300" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/The_Times_Of_INDIA.png?v=1721728165&width=255" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Grazia.png?v=1721728165&width=300" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Femina.png?v=1721728166&width=300" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/LocalSamosa.png?v=1721728165&width=265" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Times_Now.png?v=1721728166&width=215" alt=""></div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between mt-5 ms-5 me-5 mb-5">
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/IDIVA.png?v=1721728166&width=289" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/ET_Retail.png?v=1721728165&width=109" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/ADGULLY.png?v=1721728166&width=300" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/ZeeZest.png?v=1721728166&width=200" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/hauterrfly.png?v=1721728166&width=255" alt=""></div>
+        <div class="width"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/News_India18.png?v=1721728166&width=129" alt=""></div>
+      </div>
+      <div><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Group_2321.png?v=1752657160&width=2000" alt=""></div>
+      <div class="d-flex justify-content-center pt-3 pb-3 gap-5">
+        <div class="width1"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Mask_group_49.png?v=1752656496&width=500" alt=""></div>
+        <div class="width1"><img height="100%" width="100%" src="https://zouk.co.in/cdn/shop/files/Mask_group_50.png?v=1752656496&width=500" alt=""></div>
+      </div>
+    </section>
+    
+
+    <footer class="bg-danger">
+      <div class="d-flex- gap-5 text-light pt-5">
+        <div class="w-25 text4 ms-5 ">
+          <div><b>Find us on</b></div>
+          <div class="mt-3">Zouk is a Modern Indian Lifestyle Brand for Bags, Wallets & Luggage.</div>
+          <div class="mt-3"><b>Bulk Gifting</b></div>
+          <div class="mt-3">Looking for a bulk deal? Email your requirements to corporatesales@zouk.co.in,or to submit your requirements click here.</div>
+          <div class="fs-3 text5 mt-3"><i class="fa-brands fa-facebook" style="color: #ff9500;"></i><i class="fa-brands fa-square-twitter" style="color: #ff9500;"></i><i class="fa-brands fa-square-instagram" style="color: #ff9500;"></i><i class="fa-brands fa-square-youtube" style="color: #ff9500;"></i><i class="fa-brands fa-linkedin" style="color: #ff9500;"></i><i class="fa-solid fa-shop"  style="color: #ff9500;"></i></div>
+        </div>
+        <div class="w-25 text3">
+          <div><b>About Zouk</b></div>
+          <div class="mt-4">Customer Reviews</div>
+          <div class="mt-2">Blog</div>
+          <div class="mt-2">Our Journal</div>
+          <div class="mt-2">About Us</div>
+          <div class="mt-2">Zouk Insider</div>
+          <div class="mt-2">Sitemap</div>
+          <div class="mt-2">Store Locator</div>
+        </div>
+        <div class="w-25 text2">
+          <div><b>Useful Links</b></div>
+          <div class="mt-4">Contact Us</div>
+          <div class="mt-2">FAQs</div>
+          <div class="mt-2">Order Delivery</div>
+          <div class="mt-2">Privacy Policy</div>
+          <div class="mt-2">Exchange & Return Policy</div>
+          <div class="mt-2">Luggage Warranty</div>
+          <div class="mt-2">Track Your Order</div>
+          <div class="mt-2">Corporate Gifting</div>
+        </div>
+        <div class="w-25 text1 me-5">
+          <div><b>Newsletter</b></div>
+          <div class="mt-4">Subscribe to receive updates, access to exclusive deals, and more.</div>
+           <div class="mt-3"><input type="text" aria-label="First name" placeholder="Enter your email address" class="form-control bg-transparent "></div>
+          <div><button class="button mt-3">Subscribe</button></div>
+        </div>
+      </div>
+      <div class="ms-5 me-5 text-light mt-5">Zouk is a proudly Indian and PETA-approved lifestyle brand. We believe your bag carries more than just the essentials; it carries little pieces of you. It sticks by you and with you through every part of your day and every bag you carefully pick becomes <b>A Bagful Of You.</b> <br> From handbags and slings to totes and luggage, Zouk makes bags for doers, dreamers, go-getters and gift-givers. Each one of our prints are thoughtfully designed and inspired by India’s rich cultural heritage. Our bags are <br> perfect for work, college, weddings, gifting or just because you want a new bag.  <br> Zouk is now available online and at our flagship stores in select cities. <br> Zouk is a brand under Sea Turtle Private Limited company.</div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

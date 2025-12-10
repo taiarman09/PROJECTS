@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+:root{
+    --lead: #212121;
+    --gold-finger: #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #FFF;
+}
+
+
+body{
+    background: var(--eye-ball);
+}
+
+
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap-3{
+    gap: 3rem;
+}
+
+
+
+
+
+.navbar{
+    min-height: 14vh;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.btn{
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: var(--gold-finger);
+    border-radius: 1rem ;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: rgba(0, 0, 0, 0.257) 0 2px 1px;
+    transition: .3s ease-in-out;
+}
+
+
+.btn:hover{
+    background: var(--lead);
+}
+
+.cart-icon{
+    color: var(--lead);
+    font-size: 1.3rem;
+}
+
+.card-icon .card-value{
+    position: absolute;
+    font-size: .85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}

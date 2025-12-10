@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <span class="header">
+            <div class="header-1"><img height="100%" width="100%" src="./image/images-removebg-preview.png" alt="">
+            </div>
+            <div class="header-2">
+                <ul>
+                    <li>Home</li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="font-size: 18px;">
+                                About
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Pricing</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li><button type="button" class="btn btn-danger">Get Started</button></li>
+                </ul>
+            </div>
+        </span>
+    </header>
+
+
+
+    <section>
+        <span>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./image/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 data-aos="fade-down">Welcome to Sailor</h2>
+                            <p data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <button type="button" class="btn btn-danger" data-aos="fade-up">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./image/2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 data-aos="fade-down">At vero eos et accusamus</h2>
+                            <p data-aos="fade-down">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                                impedit quo minus id
+                                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus. Temporibus autem quibusdam et aut officiis debitis aut.
+                            </p>
+                            <button type="button" class="btn btn-danger" data-aos="fade-up">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 data-aos="fade-down">Temporibus autem quibusdam</h2>
+                            <p data-aos="fade-down">Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.
+                            </p>
+                            <button type="button" class="btn btn-danger" data-aos="fade-up">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </span>
+    </section>
+
+
+
+
+    <section>
+        <div class="border" style="padding-top: 50px;">
+            <h4 class="pl-pr" data-aos="fade-up">About <br>
+                About Us</h4>
+            <div class="df" data-aos="fade-up">
+                <div style="width: 50%;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <ul style="display: block;">
+                        <li style="padding-bottom:10px;">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li style="padding-bottom:10px;">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li style="padding-bottom:10px;">Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                    </ul>
+                </div>
+                <div style="width: 50%;">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <button type="button" class="btn btn-danger">Read More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <span
+            style="display: flex; justify-content: space-around; align-items: center; gap: 20px; flex-wrap: wrap; background-color: rgb(97, 88, 88); padding-top: 20px; padding-bottom: 20px;">
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-1.png" alt=""></li>
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-2.png" alt=""></li>
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-3.png" alt=""></li>
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-4.png" alt=""></li>
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-5.png" alt=""></li>
+            <li data-aos="fade-up"><img height="100%" width="100%"
+                    src="https://themewagon.github.io/Sailor/assets/img/clients/client-6.png" alt=""></li>
+
+        </span>
+    </section>
+
+
+
+    <!-- <section style="display: flex; justify-content: center;">
+        <div style="width: 90%;">
+            <div style="display: flex; width: 100%; gap: 20px; height: 100px; margin-top: 50px;">
+                <div class="card">
+                    <div style="display: flex;">
+                        <div
+                            style="width: 20%;height: 100%; display: flex; justify-content: center ; align-items: center;">
+                            <i class="fa-solid fa-briefcase fa-2xl" style="color: #ff004c;"></i>
+                        </div>
+                        <div style="width: 80%;">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati
+                                cupiditate non provident</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="display: flex;">
+                        <div
+                            style="width: 20%;height: 100%; display: flex; justify-content: center ; align-items: center;">
+                            <i class="fa-solid fa-briefcase fa-2xl" style="color: #ff004c;"></i>
+                        </div>
+                        <div style="width: 80%;">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati
+                                cupiditate non provident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <section>
+        <div style="width: 80%;display: flex; justify-content: center; height: 100%; padding-top: 50px;">
+            <div style="width: 100%;margin-left: 20%; height: 100%;">
+                <div style="display: flex; height: 100%; gap: 20px; gap: 50px; padding-bottom: 50px;"
+                    data-aos="fade-up">
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-briefcase fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident</p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-table-list fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Dolor Sitema</h3>
+                            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; height: 100%; gap: 20px; gap: 50px; padding-bottom: 50px;"
+                    data-aos="fade-up">
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-chart-simple fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Sed ut perspiciatis</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-binoculars fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Magni Dolores
+                            </h3>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; height: 100%; gap: 20px; gap: 50px; padding-bottom: 50px;"
+                    data-aos="fade-up">
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-sun fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Sed ut perspiciatis</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div style="width: 20%;height: 100%; padding-top: 25px; padding-left: 25px;"><i
+                                class="fa-solid fa-calendar-days fa-2xl" style="color: #ff004c;"></i></div>
+                        <div style="width: 80%;height: 100%;">
+                            <h3>Nemo Enim</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section data-aos="fade-up">
+        <h6 style="margin-left: 30px;">PORTFOLIO</h6>
+        <h2 style="margin-top: -15px; margin-left: 30px;">Necessitatibus eius consequatur</h2>
+    </section>
+
+    <!-- <section>
+        <div style="width: 80%; justify-content: center; margin-left: 10%;">
+            <div class="row">
+                <div class="column">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-1.jpg">
+                    <img src="">
+                </div>
+                <div class="column">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+                <div class="column">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+            <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+        <div class="row">
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="Mountains" style="width:100%">
+                    
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" alt="Lights" style="width:100%">
+                    
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" alt="Nature" style="width:100%">
+                   
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" alt="Car" style="width:100%">
+                   
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" alt="Car" style="width:100%">
+                    
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" alt="Car" style="width:100%">
+                    
+                </div>
+            </div>
+
+            <div class="column people">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" alt="Car" style="width:100%">
+                    
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" alt="Car" style="width:100%">
+                    
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="https://themewagon.github.io/Sailor/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" alt="Car" style="width:100%">
+                    
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section> -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

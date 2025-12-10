@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+        .underline:hover {
+            text-decoration: underline;
+        }
+
+        .image {
+            width: 200px;
+            height: 50px;
+        }
+        .header-fixed{
+      position: fixed;
+      background-color: white;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .margin100{
+      margin-top: 150px;
+    }
+        .width {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            background: linear-gradient(90deg, rgba(255, 61, 245, 1) 23%, rgba(220, 242, 234, 1) 100%);
+        }
+
+        .width:hover {
+            color: white;
+            background: linear-gradient(90deg, rgba(224, 29, 215, 1) 23%, rgba(224, 29, 215, 1) 100%);
+        }
+
+        .margin {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .margin1 {
+            margin-top: 10%;
+        }
+
+        .box3 {
+            height: 400px;
+            width: 300px;
+        }
+
+        .box3-1 {
+            height: 250px;
+            width: 100%;
+        }
+
+        .box3-2 {
+            height: 150px;
+            width: 100%;
+        }
+
+        .border {
+            width: 100px;
+            height: 30px;
+            margin-top: 65%;
+            background-color: rgb(244, 237, 229);
+            border-radius: 0 10px 0 0;
+            text-align: center;
+        }
+        .background-box-image {
+            background-image: url(https://www.giva.co/cdn/shop/files/AVNP009_1.jpg?v=1723123861&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/AVNP009_5.jpg?v=1723123861&width=533);
+        }
+        .background-box-image1{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP096_1_6e062840-f7ab-4864-b9fe-823941f0adf3.jpg?v=1726045655&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image1:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP096_5_63266640-cf3c-4c72-8125-8469b469d357.jpg?v=1726045655&width=533 );
+        }
+        .background-box-image2{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0207_1.jpg?v=1731592153&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image2:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0207_5.jpg?v=1731591885&width=533);
+        }
+        .background-box-image3{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP087_1_d107d792-730b-4771-8f77-e2e603e1dea5.jpg?v=1756798726&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image3:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP087_5_3d2b45f7-03c8-4be2-814d-bd9144366e8e.jpg?v=1756798726&width=533);
+        }
+        .background-box-image4{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP092_1.jpg?v=1729176363&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image4:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP092_5.jpg?v=1729176363&width=533);
+        }
+        .background-box-image5{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0208_1.jpg?v=1731592189&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image5:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0208_5.jpg?v=1731592190&width=533);
+        }
+        .background-box-image6{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0173_1.jpg?v=1696510709&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image6:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0173_5.jpg?v=1696510709&width=533);
+        }
+        .background-box-image7{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0206_1.jpg?v=1731583947&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image7:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0206_5.jpg?v=1731583947&width=533);
+        }
+        .background-box-image8{
+            background-image: url(https://www.giva.co/cdn/shop/products/AVNP007_1.jpg?v=1626431682&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image8:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/AVNP008_2.jpg?v=1626431682&width=533);
+        }
+        .background-box-image9{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0171_1.jpg?v=1696510457&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image9:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0171_5.jpg?v=1696510457&width=533);
+        }
+        .background-box-image10{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP071_1_e34f8aa4-e8d7-4e5f-b9d3-328f1dcc59c8.jpg?v=1728885524&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image10:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP071_5.jpg?v=1728571617&width=533);
+        }
+        .background-box-image11{
+            background-image: url(https://www.giva.co/cdn/shop/files/preview_images/17f4b986c6ac48a0b6c9df80836e4f95.thumbnail.0000000000.jpg?v=1742475546&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image11:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP0106_1_7a9fc21c-ecab-4050-bc85-605d203da72a.jpg?v=1752064673&width=533);
+        }
+        .background-box-image12{
+            background-image: url(https://www.giva.co/cdn/shop/products/NP014_1.jpg?v=1626447835&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image12:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/NP014_2.jpg?v=1626447835&width=533);
+        }
+        .background-box-image13{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP012_1.jpg?v=1721892636&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image13:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP012_5.jpg?v=1721892637&width=533);
+        }
+        .background-box-image14{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP079_1_2b77d465-43ae-4e13-973c-c3f7e3400b54.jpg?v=1729397051&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image14:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP079_5_146ff079-9b4f-490f-ad35-8cc2e0a61856.jpg?v=1729397051&width=533);
+        }
+        .background-box-image15{
+            background-image: url(https://www.giva.co/cdn/shop/products/NP069_1.jpg?v=1662036312&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image15:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/NP069_5.jpg?v=1687263306&width=533);
+        }
+        .background-box-image16{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP081_1_aa479414-cefe-4717-a437-fabcc46bec76.jpg?v=1729397472&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image16:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP081_5_eb8980cc-5d22-4014-894d-9e56a47898e6.jpg?v=1729397472&width=533);
+        }
+        .background-box-image17{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP088_1.jpg?v=1729945441&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image17:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP088_5.jpg?v=1747982503&width=533);
+        }
+        .background-box-image18{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP087_3_fc109d0d-01fa-4e13-8669-f13c58b828e9.jpg?v=1735537143&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image18:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP087_5_e580f387-9ac7-4718-843f-a95910346e77.jpg?v=1735537143&width=533);
+        }
+        .background-box-image19{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0217_1.jpg?v=1723123988&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image19:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0217_5.jpg?v=1723123988&width=533);
+        }
+        .background-box-image20{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP0105_1_6dcbd617-ffa7-411b-9426-d784f3035c52.jpg?v=1753089698&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image20:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP0105_5_86103bcf-b508-4174-b76b-accf79ef325e.jpg?v=1753089698&width=533);
+        }
+        .background-box-image21{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP060_1_1_ad0a7dee-1c64-4edf-bc73-4874b492c555.jpg?v=1740477187&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image21:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP060_5_8d2765a1-2268-439a-b331-1d42f4f867d9.jpg?v=1740477187&width=533);
+        }
+        .background-box-image22{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0222_1.jpg?v=1724245324&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image22:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0222_5.jpg?v=1724245324&width=533);
+        }
+        .background-box-image23{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0219_3.jpg?v=1724244579&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image23:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0219_5.jpg?v=1724244579&width=533);
+        }
+        .background-box-image24{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP070_1.jpg?v=1728569767&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image24:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP070_5.jpg?v=1728569768&width=533);
+        }
+        .background-box-image25{
+            background-image: url(https://www.giva.co/cdn/shop/products/NP0121_1-min.jpg?v=1671716018&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image25:hover {
+            background-image: url(https://www.giva.co/cdn/shop/products/NP0121_2-min.jpg?v=1671716018&width=533);
+        }
+        .background-box-image26{
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0220_3.jpg?v=1724246418&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image26:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/NP0220_5.jpg?v=1724246419&width=533);
+        }
+        .background-box-image27{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP069_1_ec2d319f-6db6-41da-9f63-ab524cc110ca.jpg?v=1728624293&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image27:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP069_5.jpg?v=1728571420&width=533);
+        }
+        .background-box-image28{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP065_1_c59c3b46-459c-416c-ac3c-6753a726f71b.jpg?v=1740477037&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image28:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP065_5_01befe64-d70a-43e8-b368-e41c08c5d434.jpg?v=1740477037&width=533);
+        }
+        .background-box-image29{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP0102_1.jpg?v=1738999975&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image29:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP0102_5.jpg?v=1738999975&width=533);
+        }
+        .background-box-image30{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP061_1_1.jpg?v=1724061056&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image30:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP061_5.jpg?v=1723556538&width=533);
+        }
+        .background-box-image31{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP098_1_0bf16065-b433-487d-bd8d-9dacf2e3f9d7.jpg?v=1729398331&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image31:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP098_5_92506190-10bb-435d-a8cf-60df306b0a3f.jpg?v=1729398331&width=533 );
+        }
+        .background-box-image32{
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP072_1.jpg?v=1729945735&width=533);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .background-box-image32:hover {
+            background-image: url(https://www.giva.co/cdn/shop/files/GDLNP072_5.jpg?v=1729945734&width=533);
+        }
+
+
+
+
+         @media(max-width:992px) {
+            .hidden {
+                display: none;
+            }
+        }
+
+        @media(min-width:993px) {
+            .navbar-123 {
+                display: none;
+            }
+        }
+
+        .list-style-none {
+            list-style: none;
+        }
+
+        .icone:hover {
+            transform: scale(1.3);
+        }
+
+        @media(max-width:500px) {
+            .hidden-menu-2 {
+                display: none;
+            }
+
+            .margin {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        @media(min-width:501px) {
+            .hidden-menu {
+                display: none;
+            }
+        }
+        </style>
+</head>
+<body>
+
+
+    <section class="header-fixed">
+    <div class="d-flex justify-content-between pt-3 pb-3 ms-3 me-3">
+      <div>
+        <nav class="navbar navbar-expand-lg hidden">
+          <div class="container-fluid">
+            <a class="navbar-brand image" href="#"><img height="100%" width="100%"
+                src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                alt=""></a>
+          </div>
+        </nav>
+      </div>
+      <div class="d-flex gap-3  justify-content-center align-items-center">
+        <div class="hidden">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Where to Deliver? <br> Update
+            Delivery
+            Pincode</button>
+
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Enter Pincode</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                  <label for="floatingInputGroup1">Enter Your Pincode</label>
+                </div>
+                <span class="input-group-text "><a href="index.html" class="underline-none">Update</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden">
+          <div class="form-floating  w-100-">
+            <input type="text" class="form-control" id="floatingPassword">
+            <label for="floatingPassword">Search For Product</label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex  justify-content-center align-items-center gap-3">
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-store"></i></div>
+          <div>Stores</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-user"></i></div>
+          <div>Account</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-heart"></i></div>
+          <div>Wishlist</div>
+        </div>
+        <div class="hidden">
+          <div class="fs-3 d-flex icone justify-content-center"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div>Cart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-123">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand image " href="#"><img height="100%" width="100%"
+              src="https://th.bing.com/th/id/OIP.nrXgb78qTO98djDIhDTOrgHaD4?w=342&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div>
+                    <div class="form-floating  w-100-">
+                      <input type="text" class="form-control" id="floatingPassword">
+                      <label for="floatingPassword">Search For Product</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+    <nav role="navigation" class="primary-navigation">
+      <div class="d-flex flex-wrap gap-2 margin justify-content-center">
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop by Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="all.html">All</a></li>
+            <li><a class="dropdown-item" href="ring.html">Rings</a></li>
+            <li><a class="dropdown-item" href="necklaces.html">Necklaces & Pendants</a></li>
+            <li><a class="dropdown-item" href="bracelets.html">Bracelets</a></li>
+            <li><a class="dropdown-item" href="earrings.html">Earrings</a></li>
+            <li><a class="dropdown-item" href="anklets.html">Anklets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gold with Lab Diamonds
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Giva Gift Card
+          </button>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gift Store
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="givagiftstore.html">GIVA Gift Store</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Occassion</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Theme</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Recipient</a></li>
+            <li><a class="dropdown-item" href="#">Shop by Price</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men's Jewellery
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Rings</a></li>
+            <li><a class="dropdown-item" href="#">Pendants</a></li>
+            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="#">Chains</a></li>
+            <li><a class="dropdown-item" href="#">Sets</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Latest Collections
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Gemstone Collection</a></li>
+            <li><a class="dropdown-item" href="#">Piercing Collection</a></li>
+            <li><a class="dropdown-item" href="#">DIVA Collection</a></li>
+            <li><a class="dropdown-item" href="#">Valentine's Collection</a></li>
+            <li><a class="dropdown-item" href="#">Sky High</a></li>
+            <li><a class="dropdown-item" href="#">Wings of Wonder</a></li>
+            <li><a class="dropdown-item" href="#">Cherry Pop Collection</a></li>
+            <li><a class="dropdown-item" href="#">Love in Paris</a></li>
+            <li><a class="dropdown-item" href="#">Convertible Collection</a></li>
+            <li><a class="dropdown-item" href="#">Just Arrived</a></li>
+          </ul>
+        </div>
+        <div class="dropdown hidden-menu-2">
+          <button class="btn font-size dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More at GIVA
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Media Mentions</a></li>
+            <li><a class="dropdown-item" href="#">Corporate Partnerships</a></li>
+            <li><a class="dropdown-item" href="#">Jewellery Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Care</a></li>
+            <li><a class="dropdown-item" href="#">GIVA Blogs</a></li>
+            <li><a class="dropdown-item" href="#">Support & FAQs</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
+
+  <section>
+    <select class="form-select hidden-menu form-select-sm" aria-label="Small select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </section>
+
+
+
+        <section class="margin100">
+
+            <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.giva.co/cdn/shop/files/Nose_pins_collection_Banner.jpg?v=1755510279&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/Nose_pins_collection_Banner.jpg?v=1755510279&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/Nose_pins_collection_Banner.jpg?v=1755510279&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/Nose_pins_collection_Banner.jpg?v=1755510279&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.giva.co/cdn/shop/files/Nose_pins_collection_Banner.jpg?v=1755510279&width=1780" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <hr>
+
+        <h3 class="ms-3">All (30+ Designs)</h3>
+
+         <section>
+            <div class="d-flex gap-3 flex-wrap justify-content-around ps-3 pe-3">
+
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 170
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹4,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹6,599</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Oxidised Silver Flower Blossom Nose ...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image1">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 101
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹4,499</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹7,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Golden Twisted Nose Ring</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image2">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 121
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹6,699</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹10,799</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Aurora Kiss Nosepin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image3">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.6 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹22,699</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹36,799</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Oxidised Silver Black Square Nose Pin ...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image4">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 253
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹12,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹20,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Minimalist Dot Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image5">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 339
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹3,899</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹6,999</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Starry Night Nosepin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                 <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image6">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 109
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹9,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹10,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Floral Fantasy Nose Pin (Clip On)</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image7">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 188
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹3,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹5,799</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Emerald Aura Nose Ring</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image8">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 287
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹3,399</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹5,999</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Oxidised Silver Floral Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image9">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 221
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹3,499</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹5,999</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Classic Quartet Zircon Nose Pin ...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image10">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 221
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹3,499</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹6,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Mellifluous Diamond Earrings</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image11">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 182
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Minimal Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image12">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 49
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Sparkling Heart Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image13">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,699</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,399</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Blossom Brilliance Diamond Nos...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image14">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 85
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Leaflet Shine Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image15">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 35
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Golden Beaded Moon Nose Ring</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image16">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">5.0 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 2
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹6,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹9,799</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Blomst Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image17">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 116
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Graceful Orchid Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image18">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 114
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Petalo Diamond Nose Ring</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image19">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 72
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,799</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Leafy Elegant Nose Pin (Clip On)</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image20">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 112
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Rose Gold Floral Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image21">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 48
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Shinny Floret Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image22">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 121
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Kiran Nose Pin (Clip on)</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image23">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 143
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Silver Rhea Nose Pin (Clip on)</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image24">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.7 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 87
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,099</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,099</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Everlasting Floret Diamond Nose..</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image25">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 127
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,999</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹5,899</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Opulent Flower Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image26">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 30
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,199</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,299</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Petalia Lab Grown Diamond Nose...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image27">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 18
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,899</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Radiancy Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image28">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 40
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,899</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Gracious Splendour Diamond No...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image29">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.6 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 47
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,599</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,199</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Flourish Clover Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image30">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.8 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 339
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹2,399</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹4,699</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Gorgeous Square Diamond Nose ...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image31">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">5.0 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 111
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,299</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹2,599</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Square Radiance Diamond Nose ...</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box3 mt-2">
+                    <div class="box3-1 background-box-image32">
+                        <div class="text-end "><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+                        <div class="border">4.9 <i class="fa-solid fa-star" style="color: #ff4000;"></i>&nbsp; | 7
+                        </div>
+                    </div>
+                    <div class="box3-2 pt-2">
+                        <div class="d-flex align-items-center">
+                            <h5 class="card-title ">₹1,799</h5>
+                            <h6 class="card-title text-decoration-line-through ms-2">₹3,499</h6>
+                        </div>
+                        <h6 class="card-title underline mt-2 ">Gold Gracia Diamond Nose Pin</h6>
+                        <a href="#" class="btn width  mt-5">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+</html> 
